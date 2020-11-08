@@ -15,4 +15,7 @@ Removal of either one web servers should automatically fail over to the other se
 --> Below are the required steps for running the template:-
 1. First create a key-pair in AWS account, as it will be required as parameter in the template.
 2. Pass the key-pair name created in the Step 1.
+
+
+
 Ex. aws cloudformation create-stack --stack-name alation-assignment-solution --template-body file://template_alation.yml --parameters SSHKeyName=KeyPairName
